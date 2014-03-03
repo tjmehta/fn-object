@@ -44,6 +44,7 @@ fno(obj).vals
     bar: true
   }
 */
+```
 
 ## Map an Object's keys
 
