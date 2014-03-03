@@ -1,3 +1,10 @@
+var clone = function (obj) {
+  var out = obj;
+  Object.keys(obj).forEach(function (key) {
+    out[key] = obj[key];
+  });
+  return out;
+};
 var objValues = function (obj) {
   return Object.keys(obj).map(function (key) {
     return obj[key];
@@ -92,6 +99,7 @@ FunctionalObjectVals.prototype.val = FunctionalObjectVals.prototype.value;
   Class
  */
 function FunctionalObject (obj) {
+  obj = clone(obj);
   this.obj = obj;
   this.keys = new FunctionalObjectVals(obj);
   this.vals = this.values = new FunctionalObjectVals(obj);

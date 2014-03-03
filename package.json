@@ -1,7 +1,7 @@
 {
   "name": "fn-object",
   "version": "0.1.1",
-  "description": "map and filter for object's keys and values (that modify the object)",
+  "description": "map and filter for object's keys and values, and get a modified object",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
