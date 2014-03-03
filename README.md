@@ -1,4 +1,4 @@
-fn-object
+'fn-object'
 ====
 
 # map and filter for object keys and values
@@ -6,7 +6,7 @@ fn-object
 ## Map an Object's values
 
 ```js
-var fno = require(fn-object);
+var fno = require('fn-object');
 var obj = {
   key: 'val'
 };
@@ -14,7 +14,7 @@ var obj = {
 fno(obj).vals
   .map(function (val) {
     return val+'1';
-  });
+  })
   .val()
 /*
   {
@@ -26,17 +26,17 @@ fno(obj).vals
 ## Filter an Object's values
 
 ```js
-var fno = require(fn-object);
+var fno = require('fn-object');
 var obj = {
   foo: true,
-  bar: true;
+  bar: true,
   qux: false
 };
 
 fno(obj).vals
-  .filter(function (key) {
+  .filter(function (val) {
     return val;
-  });
+  })
   .val()
 /*
   {
@@ -48,7 +48,7 @@ fno(obj).vals
 ## Map an Object's keys
 
 ```js
-var fno = require(fn-object);
+var fno = require('fn-object');
 var obj = {
   key: 'val'
 };
@@ -56,7 +56,7 @@ var obj = {
 fno(obj).keys
   .map(function (key) {
     return key+'1';
-  });
+  })
   .val()
 /*
   {
@@ -68,7 +68,7 @@ fno(obj).keys
 ## Filter an Object's keys
 
 ```js
-var fno = require(fn-object);
+var fno = require('fn-object');
 var obj = {
   key : true,
   key2: true,
@@ -76,9 +76,9 @@ var obj = {
 };
 
 fno(obj).keys
-  .map(function (key) {
+  .filter(function (key) {
     return key.indexOf('key') === 0;
-  });
+  })
   .val()
 /*
   {

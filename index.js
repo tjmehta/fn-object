@@ -19,7 +19,7 @@ function FunctionalObjectKeys (obj) {
 }
 FunctionalObjectKeys.prototype.map = function (fn) {
   var obj = this.obj;
-  var keys = Object.key(obj);
+  var keys = Object.keys(obj);
 
   keys.map(fn)
     .forEach(function (newKey, i) {
@@ -33,7 +33,7 @@ FunctionalObjectKeys.prototype.map = function (fn) {
 };
 FunctionalObjectKeys.prototype.filter = function (fn) {
   var obj = this.obj;
-  var keys = Object.key(obj);
+  var keys = Object.keys(obj);
   var newKeys = keys.filter(fn);
 
   keys.forEach(function (key, i) {
@@ -70,8 +70,8 @@ FunctionalObjectVals.prototype.map = function (fn) {
 };
 FunctionalObjectVals.prototype.filter = function (fn, dontDeleteSetNull, useUndefined) {
   var obj = this.obj;
-  var keys = objValues(obj);
-  var values = values(obj);
+  var keys = Object.keys(obj);
+  var values = objValues(obj);
 
   values
     .forEach(function (val, i) {
@@ -101,7 +101,7 @@ FunctionalObjectVals.prototype.val = FunctionalObjectVals.prototype.value;
 function FunctionalObject (obj) {
   obj = clone(obj);
   this.obj = obj;
-  this.keys = new FunctionalObjectVals(obj);
+  this.keys = new FunctionalObjectKeys(obj);
   this.vals = this.values = new FunctionalObjectVals(obj);
 }
 
