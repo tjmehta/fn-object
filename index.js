@@ -1,10 +1,5 @@
-var clone = function (obj) {
-  var out = obj;
-  Object.keys(obj).forEach(function (key) {
-    out[key] = obj[key];
-  });
-  return out;
-};
+var clone = require('clone');
+
 var objValues = function (obj) {
   return Object.keys(obj).map(function (key) {
     return obj[key];
