@@ -1,4 +1,4 @@
-'fn-object'
+fn-object
 ====
 
 # map and filter for object keys and values
