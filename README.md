@@ -1,4 +1,4 @@
-fn-object
+fn-object [![Build Status](https://travis-ci.org/tjmehta/fn-object.png?branch=master)](https://travis-ci.org/tjmehta/fn-object)
 ====
 
 # map and filter for object keys and values
