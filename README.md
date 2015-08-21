@@ -1,5 +1,6 @@
-fn-object [![Build Status](https://travis-ci.org/tjmehta/fn-object.png?branch=master)](https://travis-ci.org/tjmehta/fn-object)
-====
+fn-object
+=========
+[![Build Status][1]][2] [![dependency status][3]][4] [![dev dependency status][5]][6]
 
 # map and filter for object keys and values
 
@@ -88,3 +89,10 @@ fno(obj).keys
   }
 */
 ```
+
+[1]: https://travis-ci.org/tjmehta/fn-object.png
+[2]: https://travis-ci.org/tjmehta/fn-object
+[3]: https://david-dm.org/tjmehta/fn-object.png
+[4]: https://david-dm.org/tjmehta/fn-object
+[5]: https://david-dm.org/tjmehta/fn-object/dev-status.png
+[6]: https://david-dm.org/tjmehta/fn-object#info=devDependencies
