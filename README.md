@@ -1,3 +1,6 @@
+DEPRECATED - use [tjmehta/object-loops](https://github.com/tjmehta/object-loops)
+========
+
 fn-object
 =========
 [![Build Status][1]][2] [![dependency status][3]][4] [![dev dependency status][5]][6]
